@@ -1,0 +1,340 @@
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~
+$ git init
+Initialized empty Git repository in C:/Users/Ace/.git/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~ (master)
+$ cd e
+bash: cd: e: No such file or directory
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~ (master)
+$ cd E:
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd a
+bash: cd: a: No such file or directory
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ mkdir qwerty
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd qwerty
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ mkdir qaz
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ cd qaz
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty/qaz
+$ vi file1.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty/qaz
+$ cd..
+bash: cd..: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty/qaz
+$ cd.. qaz
+bash: cd..: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty/qaz
+$ cd ..
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ vi ace.cpp
+
+[1]+  Stopped                 vi ace.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ vi ace.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ vi neo.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ ls
+ace.cpp  neo.cpp  qaz/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ git add .
+fatal: Not a git repository (or any of the parent directories): .git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ git add . neo.cpp ace.cpp
+fatal: Not a git repository (or any of the parent directories): .git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ pwd
+/e/qwerty
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ ls -ah
+./  ../  .ace.cpp.swp  ace.cpp  neo.cpp  qaz/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty
+$ git init
+Initialized empty Git repository in E:/qwerty/.git/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git add .
+warning: LF will be replaced by CRLF in ace.cpp.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in neo.cpp.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in qaz/file1.cpp.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .ace.cpp.swp
+        new file:   ace.cpp
+        new file:   neo.cpp
+        new file:   qaz/file1.cpp
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git commit -m "first commit"
+[master (root-commit) 3a77fc3] first commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 25 insertions(+)
+ create mode 100644 .ace.cpp.swp
+ create mode 100644 ace.cpp
+ create mode 100644 neo.cpp
+ create mode 100644 qaz/file1.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git remote add origin https://github.com/500061070/sup.git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git push -u origin1 master
+fatal: 'origin1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 812 bytes | 101.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/500061070/sup.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git remote
+origin
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git remote add origin2 https://github.com/500061070/yup.git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git push -u origin2 master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 812 bytes | 67.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/500061070/yup.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin2'.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git remote
+origin
+origin2
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git remote remove origin2
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git remote
+origin
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ history
+    1  MKDIR WD
+    2  CD WD
+    3  cd E:
+    4  wd
+    5  ls
+    6  ls death note
+    7  ls'death note'
+    8  ls draco
+    9  cd E:
+   10  mkdir w2
+   11  ls w2
+   12  cd w2
+   13  git init
+   14  ls
+   15  vi helloworld.cpp
+   16  ls
+   17  git status
+   18  git add helloworld.cpp
+   19  git status
+   20  git commit -m "first time commit"
+   21  git remote add origin https://github.com/500061070/ace.git
+   22  git push -u origin master
+   23  git push -u origin master
+   24  vi helloworld.cpp
+   25  git status
+   26  kdadjhwjsdfhej
+   27  qerfefqeufuqefdqeyh
+   28  git commit-m
+   29  git commit -m
+   30  git add helloworld.cpp
+   31  git status
+   32  git push -u origin master
+   33  git commit -m "committing for second time"
+   34  git push -u origin master
+   35  git init
+   36  cd e
+   37  cd E:
+   38  cd a
+   39  mkdir qwerty
+   40  cd qwerty
+   41  mkdir qaz
+   42  cd qaz
+   43  vi file1.cpp
+   44  cd..
+   45  cd.. qaz
+   46  cd ..
+   47  vi ace.cpp
+   48  vi ace.cpp
+   49  vi neo.cpp
+   50  ls
+   51  git add .
+   52  git add . neo.cpp ace.cpp
+   53  pwd
+   54  ls -ah
+   55  git init
+   56  git add .
+   57  git status
+   58  git commit -m "first commit"
+   59  git status
+   60  git remote add origin https://github.com/500061070/sup.git
+   61  git push -u origin1 master
+   62  git push -u origin master
+   63  git remote
+   64  git status
+   65  git remote add origin2 https://github.com/500061070/yup.git
+   66  git push -u origin2 master
+   67  git remote
+   68  git remote remove origin2
+   69  git remote
+   70  history
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git clone yup
+fatal: repository 'yup' does not exist
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git clone sup
+fatal: repository 'sup' does not exist
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ git clone "https://github.com/SajalSood43/Repo_23jan.git"
+Cloning into 'Repo_23jan'...
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 15 (delta 0), reused 15 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ ls
+ace.cpp  neo.cpp  qaz/  Repo_23jan/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty (master)
+$ cd Repo_23jan
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty/Repo_23jan (master)
+$ ls
+file1.c  file3.cpp  helloworld.cpp  project/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/qwerty/Repo_23jan (master)
+$

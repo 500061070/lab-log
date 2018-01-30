@@ -1,0 +1,158 @@
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~
+$ MKDIR WD
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~
+$ CD WD
+bash: CD: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~
+$ cd E:
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ wd
+bash: wd: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls
+'$RECYCLE.BIN'/  'death note'/                        Gamewares/                                                                    'My Games'/        'Stranger Things'/
+ berserk/         draco/                              Hardware.ini                                                                  'New folder'/      'Sword Art Online'/
+ Bleach/         'Flash tutorials'/                  'MICROSOFT Office PRO Plus 2016 v16.0.4266.1003 RTM   Activator [TechTools]'/  'New folder (2)'/   sys/
+ Config.Msi/     'FullMetal Alchemist BrotherHood'/   Monster/                                                                      'Program Files'/   'System Volume Information'/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$
+
+
+
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls death note
+ls: cannot access 'death': No such file or directory
+ls: cannot access 'note': No such file or directory
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls'death note'
+bash: lsdeath note: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls draco
+Sexy.Beach.3/  Star.Trek.Beyond.2016.720p.BRRip.x264.AAC-ETRG/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd E:
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ mkdir w2
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls w2
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd w2
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2
+$ git init
+Initialized empty Git repository in E:/w2/.git/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ls
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi helloworld.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ls
+helloworld.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        helloworld.cpp
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git add helloworld.cpp
+warning: LF will be replaced by CRLF in helloworld.cpp.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   helloworld.cpp
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git commit -m "first time commit"
+[master (root-commit) 5e2fe43] first time commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 7 insertions(+)
+ create mode 100644 helloworld.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git remote add origin https://github.com/500061070/ace.git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': 500061070
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/500061070/ace.git/'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 308 bytes | 11.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/500061070/ace.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ^C
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$
