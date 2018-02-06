@@ -1,0 +1,275 @@
+
+UPES-500061070+Ace@upes-500061070 MINGW32 ~ (master)
+$ cd E:
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd w2
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi q.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi w.jpeg
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi e.py
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi r.txt
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ t.c
+bash: t.c: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi t.c
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi y.png
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git init
+Reinitialized existing Git repository in E:/w2/.git/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        e.py
+        q.cpp
+        r.txt
+        t.c
+        w.jpeg
+        y.png
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ touch.gitignore
+bash: touch.gitignore: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ls *.txt
+r.txt
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ls t.*
+t.c
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ #git ignore jpeg files#
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ *.jpeg
+bash: w.jpeg: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ./a.out > t.c
+bash: ./a.out: No such file or directory
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi .gitignore
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in e.py.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in q.cpp.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in r.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in y.png.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   e.py
+        new file:   q.cpp
+        new file:   r.txt
+        new file:   t.c
+        new file:   y.png
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git commit -m "ignore"
+[master ce93a6c] ignore
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 6 files changed, 20 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 e.py
+ create mode 100644 q.cpp
+ create mode 100644 r.txt
+ create mode 100644 t.c
+ create mode 100644 y.png
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git remote
+origin
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git remote add origin2 https://github.com/500061070/temp.git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git push -u origin2 master
+Counting objects: 14, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (14/14), 1.24 KiB | 97.00 KiB/s, done.
+Total 14 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/500061070/temp.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin2'.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ ls hello*
+helloworld.cpp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi.gitignore
+bash: vi.gitignore: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi .gitignore
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin2/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ vi .gitignore
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin2/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        w.jpeg
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in w.jpeg.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git commit -m "ignored"
+[master 4a557f2] ignored
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 5 insertions(+)
+ create mode 100644 w.jpeg
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git push -u origin2 master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 388 bytes | 97.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/500061070/temp.git
+   ce93a6c..4a557f2  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin2'.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$
+we can also ignore a folder by typing 
+su*
+here su is the sub part name of the foler sub
+but we cannot include it by using !sub
+so we have to rename the folder and then check git status
+
+
+Imp:
+for ignore we use 
+vi .gitignore(this creates a ignore file )
+it is same as text file
+now whatever file we type in it will be ignored
+such as *.cpp(this will ignore all cpp files in the folder )
+and in the same file of gitignore if we type
+!filename
+for eg
+!q.ccpp(here we cannot use it for all files so we have to be specific which file not to be ignored)
+
