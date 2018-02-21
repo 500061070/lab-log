@@ -1,0 +1,141 @@
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git diff --staged
+diff --git a/qwerty.lol b/qwerty.lol
+new file mode 100644
+index 0000000..63bddec
+--- /dev/null
++++ b/qwerty.lol
+@@ -0,0 +1,4 @@
++
++lol
++didn't it would open
++
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ git diff --cached
+diff --git a/qwerty.lol b/qwerty.lol
+new file mode 100644
+index 0000000..63bddec
+--- /dev/null
++++ b/qwerty.lol
+@@ -0,0 +1,4 @@
++
++lol
++didn't it would open
++
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ clear
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/w2 (master)
+$ cd ..
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls
+'$RECYCLE.BIN'/                                                                 Monster/
+ berserk/                                                                      'My Games'/
+ Bleach/                                                                       'New folder'/
+ Config.Msi/                                                                   'New folder (2)'/
+'death note'/                                                                  'NFS MOST WANTED'/
+ draco/                                                                        'Program Files'/
+'Flash tutorials'/                                                              qwerty/
+'FullMetal Alchemist BrotherHood'/                                             'Stranger Things'/
+ Gamewares/                                                                    'Sword Art Online'/
+ Hardware.ini                                                                   sys/
+ LOG/                                                                          'System Volume Information'/
+'MICROSOFT Office PRO Plus 2016 v16.0.4266.1003 RTM   Activator [TechTools]'/   w2/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ mkdir project3
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd folder3
+bash: cd: folder3: No such file or directory
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ ls
+'$RECYCLE.BIN'/                                                                'My Games'/
+ berserk/                                                                      'New folder'/
+ Bleach/                                                                       'New folder (2)'/
+ Config.Msi/                                                                   'NFS MOST WANTED'/
+'death note'/                                                                  'Program Files'/
+ draco/                                                                         project3/
+'Flash tutorials'/                                                              qwerty/
+'FullMetal Alchemist BrotherHood'/                                             'Stranger Things'/
+ Gamewares/                                                                    'Sword Art Online'/
+ Hardware.ini                                                                   sys/
+ LOG/                                                                          'System Volume Information'/
+'MICROSOFT Office PRO Plus 2016 v16.0.4266.1003 RTM   Activator [TechTools]'/   w2/
+ Monster/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd project3
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3
+$ git init
+Initialized empty Git repository in E:/project3/.git/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ vi hell.txt
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ gid add .
+bash: gid: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ git add .
+warning: LF will be replaced by CRLF in hell.txt.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ git commit -m "Yeah"
+[master (root-commit) ac7773b] Yeah
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hell.txt
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ git remote add origin2 https://github.com/500061070/temp.git
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ git push -u origin2 master
+To https://github.com/500061070/temp.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/500061070/temp.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ ls
+hell.txt
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ git add hell.txt -e
+error: unrecognized input
+fatal: Could not apply '.git/ADD_EDIT.patch'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ delete hell.txt
+bash: delete: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$ del hell.txt
+bash: del: command not found
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/project3 (master)
+$
