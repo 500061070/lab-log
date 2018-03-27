@@ -1,0 +1,565 @@
+UPES-500061070+Ace@upes-500061070 MINGW32 /e
+$ cd temp
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp (master)
+$ ls
+file.txt
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp (master)
+$ mkdir cad
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp (master)
+$ cd cad
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git init
+Initialized empty Git repository in E:/temp/cad/.git/
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        wasp.exe
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git commit -a -m "first commit "
+On branch master
+
+Initial commit
+
+Untracked files:
+        wasp.exe
+
+nothing added to commit but untracked files present
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git add .
+warning: LF will be replaced by CRLF in wasp.exe.
+The file will have its original line endings in your working directory.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git commit -a -m "first commit "
+[master (root-commit) 2c1e615] first commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+ create mode 100644 wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git log --oneline --decorate --graph --all
+* 2c1e615 (HEAD -> master) first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   wasp.exe
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git commit -a -m "second commit "
+warning: LF will be replaced by CRLF in wasp.exe.
+The file will have its original line endings in your working directory.
+[master 13b8562] second commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git log --oneline --decorate --graph --all
+* 13b8562 (HEAD -> master) second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git branch test
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git checkout test
+Switched to branch 'test'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git branch
+  master
+* test
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ ls
+wasp.exe*
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   wasp.exe
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git commit -a -m "third commit "
+warning: LF will be replaced by CRLF in wasp.exe.
+The file will have its original line endings in your working directory.
+[test b75cd73] third commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git status
+On branch test
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git status
+On branch test
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   wasp.exe
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git commit -a -m "fourth commit "
+warning: LF will be replaced by CRLF in wasp.exe.
+The file will have its original line endings in your working directory.
+[test 82156a7] fourth commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git log --oneline --decorate --graph --all
+* 82156a7 (HEAD -> test) fourth commit
+* b75cd73 third commit
+* 13b8562 (master) second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git merge test
+Already up to date.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git checkout master
+Switched to branch 'master'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   wasp.exe
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git commit -a -m "fifth commit "
+[master fe5879b] fifth commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git log --oneline --decorate --graph --all
+* fe5879b (HEAD -> master) fifth commit
+| * 82156a7 (test) fourth commit
+| * b75cd73 third commit
+|/
+* 13b8562 second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare emerge vimdiff
+No files need merging
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git log --oneline --decorate --graph --all
+* fe5879b (HEAD -> master) fifth commit
+| * 82156a7 (test) fourth commit
+| * b75cd73 third commit
+|/
+* 13b8562 second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git checkout test
+Switched to branch 'test'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git branch test1
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git branch
+  master
+* test
+  test1
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git checkout test1
+Switched to branch 'test1'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ git checkout test
+Switched to branch 'test'
+M       wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        wasp.exe
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git branch
+  master
+* test
+  test1
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git status
+On branch test
+nothing to commit, working tree clean
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git checkout test1
+Switched to branch 'test1'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ git commit -a -m "sixth commit "
+[test1 4c0d798] sixth commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ git checkout test
+Switched to branch 'test'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test)
+$ git checkout test1
+Switched to branch 'test1'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ git log --oneline --decorate --graph --all
+* 4c0d798 (HEAD -> test1) sixth commit
+* 82156a7 (test) fourth commit
+* b75cd73 third commit
+| * fe5879b (master) fifth commit
+|/
+* 13b8562 second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (test1)
+$ git checkout master
+Switched to branch 'master'
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare emerge vimdiff
+No files need merging
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ vi wasp.exe
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git merge
+fatal: No remote for the current branch.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git merge test
+Auto-merging wasp.exe
+CONFLICT (content): Merge conflict in wasp.exe
+Automatic merge failed; fix conflicts and then commit the result.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master|MERGING)
+$ git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare emerge vimdiff
+Merging:
+wasp.exe
+
+Normal merge conflict for 'wasp.exe':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff):
+4 files to edit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master|MERGING)
+$ git merge test1
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master|MERGING)
+$ git commit -a -m "seventh commit "
+[master 730d3b4] seventh commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ cat wasp.exe
+qwertylo:wq
+wasp is best
+<<<<<<< HEAD
+qwe is wasp
+=======
+wasp is deadly
+wasp is good
+>>>>>>> test
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git log --oneline --decorate --graph --all
+*   730d3b4 (HEAD -> master) seventh commit
+|\
+* | fe5879b fifth commit
+| | * 4c0d798 (test1) sixth commit
+| |/
+| * 82156a7 (test) fourth commit
+| * b75cd73 third commit
+|/
+* 13b8562 second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        wasp.exe.orig
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git add .
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   wasp.exe.orig
+
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ cat wasp.exe.orig
+qwertylo:wq
+wasp is best
+<<<<<<< HEAD
+qwe is wasp
+=======
+wasp is deadly
+wasp is good
+>>>>>>> test
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git commit -a -m "last commit "
+[master 4abbe2e] last commit
+ Committer: Rishabh Singh <Ace@upes-500061070.DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 8 insertions(+)
+ create mode 100644 wasp.exe.orig
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$ git log --oneline --decorate --graph --all
+* 4abbe2e (HEAD -> master) last commit
+*   730d3b4 seventh commit
+|\
+* | fe5879b fifth commit
+| | * 4c0d798 (test1) sixth commit
+| |/
+| * 82156a7 (test) fourth commit
+| * b75cd73 third commit
+|/
+* 13b8562 second commit
+* 2c1e615 first commit
+
+UPES-500061070+Ace@upes-500061070 MINGW32 /e/temp/cad (master)
+$
